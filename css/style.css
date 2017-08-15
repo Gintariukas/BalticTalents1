@@ -1,0 +1,568 @@
+* {
+  box-sizing: border-box; }
+
+html body {
+  font-family: 'Montserrat', sans-serif;
+  width: 100%;
+  height: 100%; }
+
+/* Navigation Bar */
+#navBar {
+  background-color: #fff;
+  z-index: 1;
+  position: fixed;
+  width: inherit;
+  height: 60px; }
+  #navBar ul {
+    list-style-type: none;
+    float: right;
+    cursor: pointer;
+    margin: 20px 0; }
+    #navBar ul li {
+      float: left;
+      padding-left: 10px; }
+      #navBar ul li a {
+        color: #000;
+        text-decoration: none;
+        transition: all ease-in-out 0.1s; }
+      #navBar ul li a:hover {
+        color: #40b6ae; }
+  #navBar img {
+    width: 10%; }
+  #navBar .dropbtn {
+    background-color: white;
+    color: black;
+    padding: 10px;
+    border: 1px solid silver;
+    cursor: pointer;
+    margin-top: -15px;
+    outline: none;
+    transition: all ease-in-out 0.1s; }
+    #navBar .dropbtn img {
+      margin-top: -5px;
+      width: 20%; }
+  #navBar .dropdown {
+    position: relative;
+    display: inline-block; }
+  #navBar .dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 116px;
+    z-index: 1; }
+    #navBar .dropdown-content a {
+      color: black;
+      text-decoration: none;
+      display: block;
+      margin: 20px 0 20px 40px; }
+    #navBar .dropdown-content img {
+      width: 50%; }
+  #navBar .dropdown-content a:hover {
+    background-color: #f1f1f1; }
+  #navBar .dropdown:hover .dropdown-content {
+    display: block; }
+  #navBar .dropdown:hover .dropbtn {
+    background-color: #fff;
+    color: #40b6ae; }
+
+/* Main Picture */
+#header {
+  background-image: url("http://baltictalents.lt/images/new/header.jpg");
+  background-position-y: -260px;
+  background-size: cover;
+  background-repeat: no-repeat;
+  color: #fff;
+  text-align: center;
+  width: 100%;
+  padding-bottom: 60px;
+  padding-top: 50px; }
+  #header h1 {
+    font-size: 60px;
+    font-weight: bold; }
+  #header h2 {
+    width: 70%;
+    margin: auto;
+    font-size: 30px;
+    font-weight: lighter;
+    padding-top: 75px;
+    line-height: 1.5; }
+  #header .button-red {
+    margin-top: 75px;
+    height: 50px;
+    width: 280px;
+    overflow: hidden;
+    background-color: #e9423b;
+    color: white;
+    border: none;
+    font-size: 16px;
+    font-weight: bold;
+    margin-right: 15px;
+    cursor: pointer; }
+  #header .button-transparent {
+    height: 50px;
+    width: 280px;
+    overflow: hidden;
+    color: #fff;
+    font-weight: bold;
+    border: 3px solid #fff;
+    background-color: transparent;
+    cursor: pointer; }
+
+/* Slide Show */
+#myCarousel {
+  padding-top: 40px;
+  padding-bottom: 40px; }
+  #myCarousel .box {
+    width: 110px;
+    height: 110px;
+    background-color: silver;
+    border-radius: 50%; }
+  #myCarousel .media-body {
+    padding-top: 20px;
+    padding-left: 25px; }
+  #myCarousel span {
+    color: black; }
+  #myCarousel .media {
+    width: 90%;
+    margin-left: 70px; }
+  #myCarousel .left {
+    background-image: none; }
+  #myCarousel .right {
+    background-image: none; }
+  #myCarousel .glyphicon-chevron-left {
+    color: #000;
+    text-shadow: none; }
+  #myCarousel .glyphicon-chevron-left:hover {
+    color: #40b6ae; }
+  #myCarousel .glyphicon-chevron-right:hover {
+    color: #40b6ae; }
+  #myCarousel .glyphicon-chevron-right {
+    color: #000;
+    text-shadow: none; }
+  #myCarousel .carousel-control {
+    opacity: 1; }
+
+/* Video */
+#video {
+  background-color: #181c25;
+  padding-top: 45px;
+  padding-bottom: 45px; }
+  #video video {
+    width: 100%;
+    border: 1px solid #40b6ae; }
+
+/* Three Block */
+#block-three {
+  background-color: #f6f6f6;
+  cursor: pointer; }
+  #block-three .col-md-3 {
+    background-color: white;
+    text-align: center;
+    margin-top: 50px;
+    height: 432px;
+    width: 370px;
+    overflow: hidden;
+    margin-left: 15px; }
+  #block-three .col-one {
+    padding-top: 75px;
+    border-bottom: 10px solid #40b6ae; }
+    #block-three .col-one .word {
+      padding-top: 50px;
+      padding-bottom: 20px;
+      color: #40b6ae;
+      font-weight: bold;
+      font-size: 20px; }
+    #block-three .col-one p {
+      width: 70%;
+      margin: auto;
+      color: #585e5c;
+      font-weight: bold; }
+  #block-three .col-three {
+    padding-top: 95px;
+    border-bottom: 10px solid #2e837d; }
+    #block-three .col-three .word {
+      color: #2e837d;
+      padding-top: 50px;
+      padding-bottom: 20px;
+      font-weight: bold;
+      font-size: 20px; }
+    #block-three .col-three p {
+      width: 70%;
+      margin: auto;
+      color: #585e5c;
+      font-weight: bold; }
+  #block-three .col-two {
+    padding-top: 95px;
+    border-bottom: 10px solid #78d0cb; }
+    #block-three .col-two .word {
+      color: #78d0cb;
+      padding-top: 50px;
+      padding-bottom: 20px;
+      font-weight: bold;
+      font-size: 20px; }
+    #block-three .col-two p {
+      width: 70%;
+      margin: auto;
+      color: #585e5c;
+      font-weight: bold; }
+
+/* Courses */
+#courses {
+  background-color: #f6f6f6;
+  padding-bottom: 35px; }
+  #courses h2 {
+    color: #848484;
+    font-size: 15px;
+    margin-top: 40px;
+    margin-bottom: 40px; }
+    #courses h2 b {
+      color: #000;
+      font-size: 30px;
+      padding-right: 25px; }
+  #courses .lines {
+    cursor: pointer;
+    padding-top: 5px; }
+    #courses .lines .col-md-4 {
+      color: white;
+      height: 50px;
+      overflow: hidden;
+      padding: 5px 0 5px 20px;
+      background-color: #7f8d9d;
+      border-left: 5px solid #40b6ae;
+      margin-bottom: 5px; }
+      #courses .lines .col-md-4 .word {
+        font-size: 12px;
+        padding-top: 0;
+        margin-bottom: -20px; }
+      #courses .lines .col-md-4 p {
+        padding: 10px; }
+    #courses .lines .course-back {
+      background-color: #40b6ae; }
+    #courses .lines .col-md-7 {
+      background-color: #adb5bf;
+      color: white;
+      height: 50px;
+      overflow: hidden;
+      margin-bottom: 5px; }
+      #courses .lines .col-md-7 p {
+        padding: 15px;
+        font-size: 16px; }
+    #courses .lines .col-md-1 {
+      background-color: #7f8d9d;
+      color: white;
+      height: 50px;
+      overflow: hidden;
+      font-size: 20px;
+      padding: 10px;
+      margin-bottom: 5px; }
+      #courses .lines .col-md-1 i {
+        margin-left: 25px; }
+    #courses .lines .col-md-11 {
+      background-color: #adb5bf;
+      border-left: 5px solid #7f8d9d;
+      color: white;
+      font-weight: bold;
+      height: 50px;
+      overflow: hidden;
+      font-size: 16px;
+      margin-bottom: 5px; }
+      #courses .lines .col-md-11 p {
+        padding: 15px; }
+  #courses .lines:hover .col-md-4 {
+    border-left-color: #e9423b; }
+  #courses .lines:hover .col-md-1 {
+    background-color: #e9423b; }
+  #courses .lines:hover .col-md-11 {
+    border-color: #e9423b; }
+  #courses .lines:hover .course-back {
+    background-color: #e9423b; }
+
+/* Map */
+#map {
+  padding-top: 40px;
+  padding-bottom: 60px;
+  background-image: url("http://www.baltictalents.lt/images/new/map_bg.jpg"); }
+  #map h2 {
+    color: white;
+    padding-bottom: 40px;
+    font-size: 15px; }
+    #map h2 b {
+      font-size: 30px;
+      padding-right: 25px; }
+  #map .row {
+    margin-right: 0; }
+  #map .col-md-6 {
+    margin-top: 20px; }
+    #map .col-md-6 img {
+      width: 100%; }
+  #map .side {
+    color: white;
+    border: 1px solid #40b6ae;
+    height: 75px;
+    overflow: hidden;
+    width: 525px;
+    margin-bottom: 25px; }
+    #map .side img {
+      background-color: #40b6ae;
+      padding: 18px 18px;
+      width: 15%; }
+    #map .side i {
+      background-color: #40b6ae;
+      font-size: 40px;
+      padding: 20px 20px; }
+    #map .side p {
+      padding: 20px 100px; }
+      #map .side p b {
+        font-size: 25px;
+        padding-right: 20px; }
+
+/* Lectures */
+#lectures {
+  background-color: #f6f6f6; }
+  #lectures h2 {
+    padding-top: 20px;
+    padding-bottom: 20px;
+    font-size: 15px;
+    color: #848484; }
+    #lectures h2 b {
+      font-size: 30px;
+      padding-right: 25px;
+      color: #000; }
+  #lectures .col-md-4 {
+    background-color: white;
+    width: 370px;
+    overflow: hidden;
+    height: 470px;
+    margin-left: 15px;
+    margin-bottom: 40px;
+    padding: 10px 40px; }
+    #lectures .col-md-4 .lecture {
+      width: 150px;
+      height: 150px;
+      overflow: hidden;
+      background-color: silver;
+      border-radius: 50%;
+      margin: auto; }
+    #lectures .col-md-4 h4 {
+      font-weight: bold;
+      padding-bottom: 20px;
+      padding-top: 10px; }
+    #lectures .col-md-4 .name {
+      color: #40b6ae; }
+
+/* Location */
+#location {
+  padding-top: 10px;
+  padding-bottom: 40px;
+  background-image: url("http://www.baltictalents.lt/images/new/map_bg.jpg");
+  background-position: bottom;
+  background-position-x: -15px; }
+  #location .container {
+    padding: 0; }
+    #location .container .col-md-4 {
+      margin-top: 70px; }
+      #location .container .col-md-4 .card {
+        background-color: white;
+        height: 370px;
+        overflow: hidden; }
+        #location .container .col-md-4 .card .container {
+          padding: 10px 25px; }
+          #location .container .col-md-4 .card .container h4 {
+            width: 25%; }
+          #location .container .col-md-4 .card .container p {
+            color: #848484; }
+
+/* Payment */
+#payment {
+  padding-bottom: 40px;
+  background-color: #f5f5f5; }
+  #payment h4 {
+    color: #848484;
+    padding: 20px 0;
+    font-size: 15px;
+    margin-left: 15px; }
+    #payment h4 b {
+      font-size: 25px;
+      margin-right: 25px;
+      color: black; }
+  #payment .col-md-4 {
+    background-color: white;
+    height: 425px;
+    width: 370px;
+    overflow: hidden;
+    text-align: center;
+    color: #40b6ae;
+    padding: 10px 0;
+    margin-left: 15px;
+    margin-bottom: 10px; }
+    #payment .col-md-4 h4 {
+      color: #40b6ae;
+      font-size: 20px; }
+    #payment .col-md-4 .picture {
+      width: 50%;
+      padding-top: 30px; }
+    #payment .col-md-4 .color-one {
+      padding-top: 24px;
+      color: black;
+      font-size: 30px; }
+    #payment .col-md-4 .color-two {
+      padding-top: 50px;
+      color: black;
+      font-size: 30px;
+      padding-bottom: 25px; }
+    #payment .col-md-4 .picture-one {
+      width: 30%;
+      padding-top: 10px;
+      padding-bottom: 10px; }
+    #payment .col-md-4 .color-three {
+      color: black;
+      padding-top: 25px;
+      width: 250px;
+      text-align: left;
+      margin: auto; }
+    #payment .col-md-4 .center {
+      margin-top: 55px;
+      height: 50px;
+      background-color: #fafafa;
+      padding-top: 15px;
+      color: black;
+      font-weight: bold; }
+    #payment .col-md-4 .pull-right {
+      background-color: #c4c4c4;
+      height: 50px;
+      margin-top: -60px;
+      color: white;
+      width: 50px;
+      cursor: pointer;
+      padding-top: 15px;
+      transition: all ease-in-out 0.1s; }
+    #payment .col-md-4 .pull-right:hover {
+      background-color: #e9423b; }
+
+/* Labels */
+#labels {
+  background-color: #f5f5f5;
+  padding-top: 40px;
+  padding-bottom: 40px; }
+  #labels .col-md-12 {
+    padding: 0; }
+  #labels .five {
+    margin-left: 165px; }
+  #labels .pull-left {
+    width: 160px;
+    height: 100px;
+    background-color: white;
+    margin-left: 5px;
+    margin-bottom: 5px; }
+    #labels .pull-left img {
+      width: 50%;
+      filter: grayscale(100%);
+      margin-left: 40px;
+      margin-top: 10px; }
+    #labels .pull-left .size {
+      margin-top: 30px; }
+    #labels .pull-left .smaller {
+      margin-top: 20px; }
+  #labels h2 {
+    padding-bottom: 20px; }
+  #labels button {
+    margin-top: -70px;
+    color: white;
+    height: 50px;
+    background-color: black;
+    border: none;
+    width: 200px; }
+
+/* Press */
+#write {
+  background-color: #40b6ae;
+  color: white;
+  padding-top: 5px; }
+
+#press img {
+  margin: 30px 0 20px 0; }
+
+#press .pull-right {
+  width: 50%;
+  padding-right: 50px; }
+
+/* Contact */
+#contact {
+  background-image: url("http://www.baltictalents.lt/images/new/contact_bg.jpg"); }
+  #contact .container {
+    background-color: #f5f5f5;
+    border-top: 10px solid #40b6ae;
+    padding: 20px 100px;
+    margin-top: 390px;
+    width: 1145px; }
+    #contact .container h4 {
+      font-size: 25px;
+      padding-bottom: 30px; }
+    #contact .container .col-md-6 {
+      padding: 0; }
+      #contact .container .col-md-6 p {
+        margin: 0;
+        padding-bottom: 5px; }
+      #contact .container .col-md-6 input {
+        height: 50px;
+        width: 450px;
+        overflow: hidden;
+        border: 2px solid black;
+        margin-bottom: 30px;
+        padding-left: 20px; }
+      #contact .container .col-md-6 input:focus {
+        border-color: #40b6ae;
+        outline: none;
+        border-left: 10px solid #40b6ae;
+        color: #40b6ae; }
+    #contact .container input::placeholder {
+      color: black;
+      font-weight: bold; }
+    #contact .container input:focus::placeholder {
+      color: #40b6ae; }
+    #contact .container input[type=submit] {
+      color: #fff;
+      font-weight: bold;
+      background-color: #e9423b;
+      border: none;
+      height: 50px;
+      width: 450px;
+      overflow: hidden;
+      outline: none;
+      margin-top: 30px; }
+
+/* Footer */
+#footer {
+  background-color: #009e93;
+  color: white;
+  height: 100px;
+  overflow: hidden; }
+  #footer img {
+    width: 10%;
+    background-color: white; }
+  #footer .pull-left {
+    padding: 10px; }
+    #footer .pull-left p {
+      margin-bottom: 0; }
+  #footer .pull-right {
+    padding-top: 10px; }
+    #footer .pull-right a {
+      color: white;
+      text-decoration: none;
+      cursor: pointer;
+      font-weight: bold; }
+    #footer .pull-right b {
+      font-size: 25px;
+      margin-left: 70px; }
+    #footer .pull-right p {
+      margin-bottom: -10px;
+      padding-left: 15px; }
+    #footer .pull-right i {
+      background-color: #fff;
+      height: 20px;
+      width: 20px;
+      padding: 4px;
+      color: #009e93;
+      margin-top: 17px; }
+    #footer .pull-right .fa-facebook {
+      padding-left: 5px; }
